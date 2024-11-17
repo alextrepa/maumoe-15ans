@@ -31,6 +31,16 @@ Je crois qu'il n'y a pas beaucoup d'expérience dans ma vie qui se compare à no
 
 Difficile de dire ce que je préfère entre nos soirées cinéma de genre pour le club, nos soirées cinéma d'horreur (qui me manque en ce moment) ou le nombre incalculable de soirées passées à écouter une télé-réalité (looking at you Love Island 👀). J'imagine que le plus marquant restera toujours l'incontournable Vampire Diaries 🧛. J'adore notre routine du moment où je m'entraîne pendant que nous commentons ce qui joue sur le projecteur.
 
+<div class="flex">
+  <img src="/assets/img/maude_alex-cuisine.jpg" alt="Maude et Alex cuisinant avec des étrangés." width="50%">
+  <img src="/assets/img/maude_alex-resto-amis.jpg" alt="Maude et Alex au resto avec des amis." width="50%">
+</div>
+
+<div class="flex">
+  <img src="/assets/img/maude_alex-shabu.heic" alt="Maude et Alex en avant d'un resto de shabu." width="50%">
+  <img src="/assets/img/maude_alex-sushi-bebe.jpg" alt="Maude et Alex avec des sushis après l'acouchement de Maude." width="50%">
+</div>
+
 ## Ma chère Maude, ma partenaire culinaire,
 
 ---
