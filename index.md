@@ -37,7 +37,7 @@ Difficile de dire ce que je préfère entre nos soirées cinéma de genre pour l
 </div>
 
 <div class="flex">
-  <img src="/assets/img/maude_alex-shabu.heic" alt="Maude et Alex en avant d'un resto de shabu." width="50%">
+  <img src="/assets/img/maude_alex-shabu.png" alt="Maude et Alex en avant d'un resto de shabu." width="50%">
   <img src="/assets/img/maude_alex-sushi-bebe.jpg" alt="Maude et Alex avec des sushis après l'acouchement de Maude." width="50%">
 </div>
 
