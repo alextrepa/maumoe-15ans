@@ -17,17 +17,23 @@ Déjà 15 ans que nous nous sommes rencontré. 15 ans que nous avons commencé �
 
 ---
 
+Je crois qu'il n'y à pas beaucoup d'expérience dans ma vie qui se compart à nos voyage. Que ce soit nos début timide à Wells et Boston, nos voyages avec l'école à New York ou nos voyage de grand en Thaïlande ou au Pérou, j'ai toujours passé des moments merveilleux. J'aime tout de voyager avec toi, j'aime l'excitation des dicussions sur nos destinations possible, les palpitations lorsque nous sommes dans le processus d'achat du billet, mon stress dans les aéroports (ou manque de stress causant presqu'un vol raté). Ce que j'aime par dessus tout, c'est la chance de découvrir un nouveau monde et une nouvelle culture à tes côtés. J'ai hâte de découvrir la france cette année avec toi (prise 2), et le Japon bientôt.
 
+
+<div class="flex">
+  <img src="/assets/img/maude_alex-costume" alt="Maude et Alex en costume d'halloween" width="30%">
+  <img src="/assets/img/maude_alex-divan.jpg" alt="Maude et Alex grimaçant sur le divant" width="70%">
+</div>
 
 ## Ma chère Maude, ma voisine de divan,
 
 ---
 
-## Ma chère Maude, ma cinéphile,
+## Ma chère Maude, ma partenaire culinaire,
 
 ---
 
-## Ma chère Maude, ma partenaire culinaire,
+## Ma chère Maude, ma motivatrice,
 
 ---
 
