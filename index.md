@@ -47,6 +47,13 @@ Difficile de dire ce que je préfère entre nos soirées cinéma de genre pour l
 
 S'il y a bien un plaisir qu'on partage que je pourrais qualifier de coupable, c'est malheureusement notre gourmandise. C'est tellement bon la bonne bouffe. Ce qui est génial avec toi, c'est que peut importe que ce soit un souper gastronomique au Pégase, un hot pot louche au Cambodge ou une bonne vieille poutine du Bravo, chaque repas devient une excuse pour qu'on se transforme en critique culinaire de pacotille #ditavecamour. On peut passer des heures à décortiquer un repas, le comparer à des équivalents et commenter ce qui aurait pu rendre le plat encore meilleur.
 
+<div class="flex">
+  <img src="/assets/img/maude-asie.jpg" alt="Maude portant un costume traditionnel vietnamien." width="30%">
+  <img src="/assets/img/maude-clementine.jpg" alt="Maude avec sa fieul clémentine." width="30%">
+  <img src="/assets/img/maude-luna.jpg" alt="Maude avec luna." width="30%">
+</div>
+
+
 ## Ma chère Maude, ma motivatrice,
 
 ---
