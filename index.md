@@ -21,7 +21,7 @@ Je crois qu'il n'y à pas beaucoup d'expérience dans ma vie qui se compart à n
 
 
 <div class="flex">
-  <img src="/assets/img/maude_alex-costume" alt="Maude et Alex en costume d'halloween" width="30%">
+  <img src="/assets/img/maude_alex-costume.jpg" alt="Maude et Alex en costume d'halloween" width="30%">
   <img src="/assets/img/maude_alex-divan.jpg" alt="Maude et Alex grimaçant sur le divant" width="70%">
 </div>
 
