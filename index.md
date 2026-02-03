@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ![Maude et Alex se regardent devant un temple](/assets/img/maude_alex-intro.jpg)
 
 ## Ma chère Maude, mon tendre amour,
