@@ -20,8 +20,13 @@ $shadow-warm:   rgba(61, 51, 49, 0.08);
    Base & Body
    ========================================================================== */
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -32,6 +37,7 @@ body {
     background-color: $bg-warm;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
 }
 
 /* Override tactile theme container */
@@ -39,6 +45,11 @@ body {
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
+    max-width: 100%;
+    overflow: hidden;
+    width: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .inner {
@@ -145,6 +156,7 @@ hr::after {
 img {
     border-radius: 12px;
     min-width: 0;
+    max-width: 100%;
     height: auto;
     object-fit: cover;
     box-shadow: 0 4px 16px $shadow-warm;
