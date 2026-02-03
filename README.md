@@ -5,7 +5,7 @@ Carte intéractive pour mes 15 avec Maude
 Prérequis: Docker Desktop ou Docker Engine avec Compose.
 
 ```bash
-docker compose -f compose.yaml up
+docker compose up -d
 ```
 
 Puis ouvrir http://localhost:4000 dans le navigateur.
