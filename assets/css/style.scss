@@ -84,17 +84,19 @@ h1, h2, h3 {
 /* Section headings — the "Ma chere Maude, ..." lines */
 #main_content h2 {
     font-family: "Mrs Saint Delafield", cursive;
-    font-size: 2.2rem;
+    font-size: 2.6rem;
     font-weight: normal;
     color: $accent-rose;
-    margin-top: 60px;
+    margin-top: 64px;
     margin-bottom: 2px;
-    line-height: 1.3;
+    line-height: 1.25;
+    letter-spacing: 0.5px;
 }
 
 #main_content p {
-    margin-bottom: 1.4em;
+    margin-bottom: 1.5em;
     color: $text-primary;
+    font-weight: 400;
 }
 
 /* ==========================================================================
@@ -114,22 +116,26 @@ a:hover {
 }
 
 /* ==========================================================================
-   Horizontal Rules — delicate dividers
+   Horizontal Rules — delicate typographic ornament
    ========================================================================== */
 
 hr {
     border: none;
-    height: 1px;
-    background: linear-gradient(
-        to right,
-        transparent,
-        $border-soft 20%,
-        $accent-rose 50%,
-        $border-soft 80%,
-        transparent
-    );
-    margin: 12px auto 30px;
+    height: auto;
+    background: none;
+    margin: 14px auto 28px;
     max-width: 280px;
+    text-align: center;
+    overflow: visible;
+}
+
+hr::after {
+    content: "\2022\2009\2022\2009\2022";
+    display: block;
+    font-size: 0.7rem;
+    color: $accent-rose;
+    letter-spacing: 4px;
+    opacity: 0.7;
 }
 
 /* ==========================================================================
@@ -214,46 +220,57 @@ footer p::before {
 .nav-cards {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin-top: 30px;
+    gap: 22px;
+    margin-top: 36px;
 }
 
 .nav-card {
     display: block;
-    padding: 32px 30px;
+    padding: 34px 30px 28px;
     border-radius: 14px;
     background: $bg-card;
     border: 1.5px solid $border-soft;
     text-decoration: none;
     color: inherit;
+    position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .nav-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-3px);
     box-shadow: 0 8px 30px $shadow-warm;
     border-color: $accent-rose;
     text-decoration: none;
     color: inherit;
 }
 
-.nav-card-icon {
-    font-size: 2.2rem;
-    margin-bottom: 8px;
-}
-
 .nav-card h2 {
     font-family: "Mrs Saint Delafield", cursive !important;
-    font-size: 2rem;
+    font-size: 2.8rem;
     font-weight: normal;
     margin: 0 0 6px 0;
-    color: $text-primary;
+    line-height: 1.15;
+    color: $accent-rose;
 }
 
 .nav-card p {
     margin: 0;
     color: $text-secondary;
     font-size: 0.95rem;
+    font-weight: 300;
+    padding-right: 100px;
+}
+
+.nav-card-date {
+    position: absolute;
+    bottom: 14px;
+    right: 20px;
+    font-family: "Mali", cursive;
+    font-size: 0.7rem;
+    font-weight: 400;
+    font-style: italic;
+    color: $text-secondary;
+    opacity: 0.55;
 }
 
 /* ==========================================================================
@@ -319,11 +336,15 @@ header {
     }
 
     .nav-card {
-        padding: 24px 20px;
+        padding: 26px 20px 22px;
     }
 
     .nav-card h2 {
-        font-size: 1.6rem;
+        font-size: 2.2rem;
+    }
+
+    .nav-card p {
+        padding-right: 80px;
     }
 
     hr {
