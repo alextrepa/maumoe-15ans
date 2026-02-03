@@ -84,21 +84,31 @@ All images are stored in `assets/img/` and include:
 
 ## Development Workflow
 
-This is a Jekyll site, so typical workflow includes:
+**All development runs through Docker.** Do not run Jekyll or bundle commands directly on the host.
 
-1. **Local Development:**
+1. **Local Development (Docker):**
    ```bash
-   jekyll serve
-   # or
-   bundle exec jekyll serve
+   docker compose up -d
+   ```
+   This starts the Jekyll dev server with live reload at http://localhost:4000.
+   The `compose.yaml` handles `bundle install` and `jekyll serve` automatically.
+
+2. **Stopping the server:**
+   ```bash
+   docker compose down
    ```
 
-2. **Building:**
+3. **Viewing logs:**
    ```bash
-   jekyll build
+   docker compose logs -f site
    ```
 
-3. **Deployment:** Automatic via GitHub Pages on push to master branch
+4. **Rebuilding from scratch (e.g. after Gemfile changes):**
+   ```bash
+   docker compose down && docker compose up -d --build
+   ```
+
+5. **Deployment:** Automatic via GitHub Pages on push to master branch
 
 ## Git Information
 
