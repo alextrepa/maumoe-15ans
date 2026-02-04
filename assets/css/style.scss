@@ -1,28 +1,42 @@
 ---
 ---
 
-@import "{{ site.theme }}";
-
 /* ==========================================================================
-   Color Palette — warm, intimate, like aged paper and soft ink
-   ========================================================================== */
-
-$bg-warm:       #faf7f2;
-$bg-card:       #f5f0e8;
-$text-primary:  #3d3331;
-$text-secondary:#6b5c58;
-$accent-rose:   #c4867a;
-$accent-gold:   #d4a574;
-$border-soft:   #e8ddd4;
-$shadow-warm:   rgba(61, 51, 49, 0.08);
-
-/* ==========================================================================
-   Base & Body
+   CSS Reset
    ========================================================================== */
 
 *, *::before, *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+/* ==========================================================================
+   Design Tokens
+   ========================================================================== */
+
+:root {
+    --bg:          #faf8f4;
+    --bg-card:     #f7f3ed;
+    --text:        #2d2520;
+    --text-sec:    #8b7d78;
+    --text-ter:    #b5a9a4;
+    --rose:        #c28375;
+    --border:      #ede5dd;
+    --shadow:      rgba(45, 37, 32, 0.08);
+    --shadow-hover: rgba(45, 37, 32, 0.13);
+
+    --font-script: "Mrs Saint Delafield", cursive;
+    --font-heading: "Cormorant Garamond", serif;
+    --font-body:   "Source Serif 4", serif;
+
+    --max-w:       650px;
+    --gap-section: 72px;
+}
+
+/* ==========================================================================
+   Base & Body
+   ========================================================================== */
 
 html {
     scroll-behavior: smooth;
@@ -30,83 +44,95 @@ html {
 }
 
 body {
-    font-family: "Mali", cursive;
-    font-size: 17px;
+    font-family: var(--font-body);
+    font-size: 18px;
     line-height: 1.8;
-    color: $text-primary;
-    background-color: $bg-warm;
+    color: var(--text);
+    background-color: var(--bg);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
 }
 
-/* Override tactile theme container */
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
 #container {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
     max-width: 100%;
     overflow: hidden;
-    width: auto !important;
-    margin: 0 !important;
-    padding: 0 !important;
+    width: auto;
+    margin: 0;
+    padding: 0;
 }
 
 .inner {
-    max-width: 700px;
+    max-width: var(--max-w);
     margin: 0 auto;
     padding: 20px 24px 40px;
 }
 
 /* ==========================================================================
-   Typography
+   Typography — Header
    ========================================================================== */
 
 header {
-    padding-bottom: 0px;
+    padding: 48px 0 0;
     text-align: center;
-    padding-top: 40px;
 }
 
 header h1 {
-    font-family: "Mrs Saint Delafield", cursive;
+    font-family: var(--font-script);
     font-size: 3.5rem;
     font-weight: normal;
-    color: $text-primary;
+    color: var(--text);
     letter-spacing: 1px;
     margin-bottom: 4px;
     line-height: 1.2;
 }
 
 header h2 {
-    font-family: "Mali", cursive;
+    font-family: var(--font-heading);
     font-style: italic;
     font-weight: 300;
-    font-size: 1.05rem;
-    color: $text-secondary;
+    font-size: 1.15rem;
+    color: var(--text-sec);
     letter-spacing: 0.3px;
     margin-top: 0;
 }
 
-h1, h2, h3 {
-    font-family: "Sour Gummy", sans-serif;
+/* Home-specific header — more presence */
+.home-header {
+    padding: 60px 0 0;
 }
 
-/* Section headings — the "Ma chere Maude, ..." lines */
+.home-header h1 {
+    font-size: 4.2rem;
+    margin-bottom: 8px;
+}
+
+.home-header h2 {
+    font-size: 1.2rem;
+}
+
+/* ==========================================================================
+   Typography — Content
+   ========================================================================== */
+
 #main_content h2 {
-    font-family: "Mrs Saint Delafield", cursive;
-    font-size: 2.6rem;
+    font-family: var(--font-script);
+    font-size: 2.8rem;
     font-weight: normal;
-    color: $accent-rose;
-    margin-top: 64px;
-    margin-bottom: 2px;
-    line-height: 1.25;
+    color: var(--rose);
+    margin-top: var(--gap-section);
+    margin-bottom: 4px;
+    line-height: 1.2;
     letter-spacing: 0.5px;
 }
 
 #main_content p {
     margin-bottom: 1.5em;
-    color: $text-primary;
+    color: var(--text);
     font-weight: 400;
 }
 
@@ -115,7 +141,7 @@ h1, h2, h3 {
    ========================================================================== */
 
 a {
-    color: $accent-rose;
+    color: var(--rose);
     text-decoration: none;
     border-bottom: 1px solid transparent;
     transition: border-color 0.25s ease, color 0.25s ease;
@@ -123,7 +149,7 @@ a {
 
 a:hover {
     color: #a86b60;
-    border-bottom-color: $accent-rose;
+    border-bottom-color: var(--rose);
 }
 
 /* ==========================================================================
@@ -144,7 +170,7 @@ hr::after {
     content: "\2022\2009\2022\2009\2022";
     display: block;
     font-size: 0.7rem;
-    color: $accent-rose;
+    color: var(--rose);
     letter-spacing: 4px;
     opacity: 0.7;
 }
@@ -154,18 +180,18 @@ hr::after {
    ========================================================================== */
 
 img {
-    border-radius: 12px;
+    border-radius: 10px;
     min-width: 0;
     max-width: 100%;
     height: auto;
     object-fit: cover;
-    box-shadow: 0 4px 16px $shadow-warm;
+    box-shadow: 0 4px 16px var(--shadow);
     transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 img:hover {
-    transform: scale(1.015);
-    box-shadow: 0 8px 28px rgba(61, 51, 49, 0.13);
+    transform: scale(1.01);
+    box-shadow: 0 6px 24px var(--shadow-hover);
 }
 
 /* ==========================================================================
@@ -189,11 +215,11 @@ img:hover {
    ========================================================================== */
 
 .signature {
-    font-family: "Mrs Saint Delafield", cursive;
+    font-family: var(--font-script);
     font-size: 2.4rem;
     text-align: end;
     display: block;
-    color: $text-primary;
+    color: var(--text);
     margin-top: 40px;
     line-height: 1.4;
 }
@@ -203,15 +229,16 @@ img:hover {
    ========================================================================== */
 
 footer {
-    max-width: 700px;
+    max-width: var(--max-w);
     margin: 0 auto;
     padding: 30px 24px 40px;
     text-align: center;
 }
 
 footer p {
+    font-family: var(--font-body);
     font-size: 0.85rem;
-    color: $text-secondary;
+    color: var(--text-sec);
     letter-spacing: 0.3px;
     line-height: 1.7;
 }
@@ -220,9 +247,27 @@ footer p::before {
     content: "~";
     display: block;
     font-size: 1.4rem;
-    color: $accent-rose;
+    color: var(--rose);
     margin-bottom: 12px;
     letter-spacing: 8px;
+}
+
+/* ==========================================================================
+   Homepage Hero
+   ========================================================================== */
+
+.home-hero {
+    text-align: center;
+    padding-top: 12px;
+}
+
+.home-hero .hero-ornament {
+    font-family: var(--font-script);
+    font-size: 1.4rem;
+    color: var(--rose);
+    opacity: 0.5;
+    letter-spacing: 6px;
+    margin-bottom: 0;
 }
 
 /* ==========================================================================
@@ -232,58 +277,72 @@ footer p::before {
 .nav-cards {
     display: flex;
     flex-direction: column;
-    gap: 22px;
-    margin-top: 36px;
+    gap: 24px;
+    margin-top: 40px;
 }
 
 .nav-card {
     display: block;
-    padding: 34px 30px 28px;
-    border-radius: 14px;
-    background: $bg-card;
-    border: 1.5px solid $border-soft;
+    padding: 0;
+    border-radius: 16px;
+    background: var(--bg-card);
+    border: 1.5px solid var(--border);
     text-decoration: none;
     color: inherit;
     position: relative;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    overflow: hidden;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
 }
 
 .nav-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 30px $shadow-warm;
-    border-color: $accent-rose;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px var(--shadow-hover);
+    border-color: var(--rose);
     text-decoration: none;
     color: inherit;
 }
 
+.nav-card-body {
+    padding: 20px 30px 18px;
+    border-left: 3px solid transparent;
+    transition: border-color 0.35s ease;
+}
+
+.nav-card:hover .nav-card-body {
+    border-left-color: var(--rose);
+}
+
 .nav-card h2 {
-    font-family: "Mrs Saint Delafield", cursive !important;
-    font-size: 2.8rem;
+    font-family: var(--font-script);
+    font-size: 2.6rem;
     font-weight: normal;
-    margin: 0 0 6px 0;
-    line-height: 1.15;
-    color: $accent-rose;
+    margin: -6px 0 2px 0;
+    line-height: 1.1;
+    color: var(--rose);
 }
 
 .nav-card p {
     margin: 0;
-    color: $text-secondary;
-    font-size: 0.95rem;
-    font-weight: 300;
+    font-family: var(--font-heading);
+    color: var(--text-sec);
+    font-size: 1.05rem;
+    font-weight: 400;
+    font-style: italic;
     padding-right: 100px;
+    line-height: 1.6;
 }
 
 .nav-card-date {
     position: absolute;
     bottom: 14px;
     right: 20px;
-    font-family: "Mali", cursive;
+    font-family: var(--font-body);
     font-size: 0.7rem;
     font-weight: 400;
     font-style: italic;
-    color: $text-secondary;
-    opacity: 0.55;
+    color: var(--text-ter);
 }
+
 
 /* ==========================================================================
    Sticky Home Button — subpage navigation
@@ -296,23 +355,23 @@ footer p::before {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: $bg-card;
-    border: 1.5px solid $border-soft;
-    color: $text-secondary;
+    background: var(--bg-card);
+    border: 1.5px solid var(--border);
+    color: var(--text-sec);
     font-size: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    box-shadow: 0 2px 10px $shadow-warm;
+    box-shadow: 0 2px 10px var(--shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     z-index: 100;
 
     &:hover {
         transform: scale(1.1);
-        border-color: $accent-rose;
-        box-shadow: 0 4px 16px $shadow-warm;
-        color: $accent-rose;
+        border-color: var(--rose);
+        box-shadow: 0 4px 16px var(--shadow);
+        color: var(--rose);
     }
 }
 
@@ -339,8 +398,20 @@ header {
     animation: fadeInUp 0.6s ease-out both;
 }
 
+.nav-card:nth-child(1) {
+    animation: fadeInUp 0.6s ease-out 0.2s both;
+}
+
+.nav-card:nth-child(2) {
+    animation: fadeInUp 0.6s ease-out 0.35s both;
+}
+
+.nav-card:nth-child(3) {
+    animation: fadeInUp 0.6s ease-out 0.5s both;
+}
+
 /* ==========================================================================
-   Responsive — Mobile First Polish
+   Responsive
    ========================================================================== */
 
 @media screen and (max-width: 600px) {
@@ -361,13 +432,17 @@ header {
         font-size: 2.6rem;
     }
 
+    .home-header h1 {
+        font-size: 3rem;
+    }
+
     header h2 {
-        font-size: 0.95rem;
+        font-size: 1rem;
     }
 
     #main_content h2 {
-        font-size: 1.7rem;
-        margin-top: 44px;
+        font-size: 1.6rem;
+        margin-top: 48px;
     }
 
     body {
@@ -380,15 +455,15 @@ header {
     }
 
     .flex img {
-        width: 100% !important;
+        width: 100%;
     }
 
     .signature {
         font-size: 1.9rem;
     }
 
-    .nav-card {
-        padding: 26px 20px 22px;
+    .nav-card-body {
+        padding: 24px 20px 22px;
     }
 
     .nav-card h2 {
@@ -396,7 +471,13 @@ header {
     }
 
     .nav-card p {
-        padding-right: 80px;
+        padding-right: 50px;
+    }
+
+
+    #main_content h2 {
+        font-size: 2rem;
+        margin-top: 48px;
     }
 
     hr {
