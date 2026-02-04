@@ -1,5 +1,5 @@
-# maumoe-15ans
-Carte intéractive pour mes 15 avec Maude
+# Maumoe
+Cartes intéractives pour Maude Denis-Mélançon
 
 ## Lancer le site en local (Docker)
 Prérequis: Docker Desktop ou Docker Engine avec Compose.
