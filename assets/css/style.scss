@@ -282,16 +282,45 @@ footer p::before {
 }
 
 .nav-card {
-    display: block;
+    display: flex;
+    align-items: flex-end;
     padding: 0;
     border-radius: 16px;
-    background: var(--bg-card);
+    background-color: var(--bg-card);
+    background-size: cover;
+    background-position: center;
     border: 1.5px solid var(--border);
     text-decoration: none;
     color: inherit;
     position: relative;
     overflow: hidden;
+    min-height: 180px;
     transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.nav-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(250, 248, 244, 0) 20%,
+            rgba(250, 248, 244, 0.88) 55%,
+            rgba(250, 248, 244, 0.97) 100%
+        ),
+        radial-gradient(
+            ellipse at center,
+            rgba(250, 248, 244, 0.35) 0%,
+            rgba(250, 248, 244, 0.55) 50%,
+            rgba(247, 243, 237, 0.85) 100%
+        );
+    transition: opacity 0.35s ease;
+    z-index: 0;
+}
+
+.nav-card:hover::before {
+    opacity: 0.85;
 }
 
 .nav-card:hover {
@@ -303,6 +332,9 @@ footer p::before {
 }
 
 .nav-card-body {
+    position: relative;
+    z-index: 1;
+    width: 100%;
     padding: 20px 30px 18px;
     border-left: 3px solid transparent;
     transition: border-color 0.35s ease;
@@ -319,6 +351,7 @@ footer p::before {
     margin: -6px 0 2px 0;
     line-height: 1.1;
     color: var(--rose);
+    text-shadow: 0 1px 4px rgba(250, 248, 244, 0.9);
 }
 
 .nav-card p {
@@ -330,6 +363,7 @@ footer p::before {
     font-style: italic;
     padding-right: 100px;
     line-height: 1.6;
+    text-shadow: 0 1px 4px rgba(250, 248, 244, 0.9);
 }
 
 .nav-card-date {
@@ -341,8 +375,73 @@ footer p::before {
     font-weight: 400;
     font-style: italic;
     color: var(--text-ter);
+    z-index: 1;
 }
 
+
+/* ==========================================================================
+   Subpage Hero Banner
+   ========================================================================== */
+
+.hero-banner {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(250, 248, 244, 0) 40%,
+            rgba(250, 248, 244, 0.85) 75%,
+            rgba(250, 248, 244, 0.97) 100%
+        ),
+        radial-gradient(
+            ellipse at center,
+            rgba(250, 248, 244, 0.15) 0%,
+            rgba(250, 248, 244, 0.4) 50%,
+            rgba(247, 243, 237, 0.75) 100%
+        );
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 40px 24px 32px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-family: var(--font-script);
+    font-size: 3.5rem;
+    font-weight: normal;
+    color: var(--text);
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+    line-height: 1.2;
+    text-shadow: 0 1px 6px rgba(250, 248, 244, 0.8);
+}
+
+.hero-content h2 {
+    font-family: var(--font-heading);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.15rem;
+    color: var(--text-sec);
+    letter-spacing: 0.3px;
+    margin-top: 0;
+    text-shadow: 0 1px 6px rgba(250, 248, 244, 0.8);
+}
 
 /* ==========================================================================
    Sticky Home Button — subpage navigation
@@ -460,6 +559,55 @@ header {
 
     .signature {
         font-size: 1.9rem;
+    }
+
+    .hero-banner {
+        min-height: 250px;
+    }
+
+    .hero-overlay {
+        background:
+            linear-gradient(
+                to bottom,
+                rgba(250, 248, 244, 0) 10%,
+                rgba(250, 248, 244, 0.85) 45%,
+                rgba(250, 248, 244, 0.97) 70%,
+                rgba(250, 248, 244, 1) 100%
+            ),
+            radial-gradient(
+                ellipse at center,
+                rgba(250, 248, 244, 0.3) 0%,
+                rgba(250, 248, 244, 0.6) 50%,
+                rgba(247, 243, 237, 0.9) 100%
+            );
+    }
+
+    .hero-content h1 {
+        font-size: 2.6rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1rem;
+    }
+
+    .nav-card {
+        min-height: 140px;
+    }
+
+    .nav-card::before {
+        background:
+            linear-gradient(
+                to bottom,
+                rgba(250, 248, 244, 0.3) 0%,
+                rgba(250, 248, 244, 0.92) 40%,
+                rgba(250, 248, 244, 0.98) 100%
+            ),
+            radial-gradient(
+                ellipse at center,
+                rgba(250, 248, 244, 0.5) 0%,
+                rgba(250, 248, 244, 0.7) 50%,
+                rgba(247, 243, 237, 0.9) 100%
+            );
     }
 
     .nav-card-body {

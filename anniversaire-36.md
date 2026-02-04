@@ -2,10 +2,10 @@
 layout: default
 title: Joyeux 36e anniversaire
 description: Vaut mieux pas trop penser au chiffre!
+date: 2026-02-05
 permalink: /anniversaire-36/
+hero_image: /assets/img/maude_maggie_alex-sacre-coeur.jpg
 ---
-
-![Maude, Marguerite et Alex souriant dans une balnçoire](/assets/img/maude_maggie_alex-balancoire.jpg)
 
 ## Quel chance de vieillir!
 

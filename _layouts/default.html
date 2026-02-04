@@ -16,12 +16,23 @@
     <a href="/" class="home-btn" title="Retour à l'accueil" aria-label="Retour à l'accueil">
       &#8592;
     </a>
+    {% if page.hero_image %}
+    <div class="hero-banner" style="background-image: url('{{ page.hero_image }}')">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+        <h2>{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      </div>
+    </div>
+    {% endif %}
     <div id="container">
       <div class="inner">
+        {% unless page.hero_image %}
         <header>
           <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
           <h2>{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
         </header>
+        {% endunless %}
         <hr>
         <section id="main_content">
           {{ content }}
@@ -30,7 +41,12 @@
     </div>
     <footer>
       <p>
-        Publi&eacute; le 17 novembre 2024<br>
+        {% if page.date %}
+        {% assign months = "janvier février mars avril mai juin juillet août septembre octobre novembre décembre" | split: " " %}
+        {% assign month_index = page.date | date: "%-m" | minus: 1 %}
+        {% assign month_name = months[month_index] %}
+        Publi&eacute; le {{ page.date | date: "%-d" }} {{ month_name }} {{ page.date | date: "%Y" }}<br>
+        {% endif %}
         Avec amour par Alex Tr&eacute;panier
       </p>
     </footer>

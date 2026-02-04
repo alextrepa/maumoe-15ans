@@ -2,10 +2,10 @@
 layout: default
 title: 15 ans ensemble
 description: Déjà 15 ans de vie commune et ça ne fait que commencer!
+date: 2024-11-17
 permalink: /couple-15ans/
+hero_image: /assets/img/maude_alex-intro.jpg
 ---
-
-![Maude et Alex se regardent devant un temple](/assets/img/maude_alex-intro.jpg)
 
 ## Ma chère Maude, mon tendre amour,
 
