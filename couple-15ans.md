@@ -13,11 +13,11 @@ hero_image: /assets/img/maude_alex-intro.jpg
 
 Déjà 15 ans que nous nous sommes rencontrés. 15 ans que nous avons commencé à nous fréquenter. 15 années où nous avons passé la vaste majorité de chaque journée ensemble. Et pourtant, on dirait que nous sommes encore au début de cette belle aventure. Ces 15 ans nous a permis de bâtir quelque chose de solide, une fondation inébranlable sur laquelle repose notre amour. Mon amour pour toi n'a jamais cessé de grandir et il ne montre pas de signe de ralentissement.
 
-![Maude et Alex à l'aquarium](/assets/img/maude_alex_otarie.jpg)
+<img src="/assets/img/maude_alex_otarie.jpg" alt="Maude et Alex à l'aquarium" loading="lazy" decoding="async">
 
 <div class="flex">
-  <img src="/assets/img/maude_alex-grece.jpg" alt="Maude et Alex en Grèce" width="50%">
-  <img src="/assets/img/maude_alex_cape-may.jpg" alt="Maude et Alex à Cape May" width="50%">
+  <img src="/assets/img/maude_alex-grece.jpg" alt="Maude et Alex en Grèce" width="50%" loading="lazy" decoding="async">
+  <img src="/assets/img/maude_alex_cape-may.jpg" alt="Maude et Alex à Cape May" width="50%" loading="lazy" decoding="async">
 </div>
 
 ## Ma chère Maude, ma compagne de voyage,
@@ -28,8 +28,8 @@ Je crois qu'il n'y a pas beaucoup d'expérience dans ma vie qui se compare à no
 
 
 <div class="flex">
-  <img src="/assets/img/maude_alex-costume.jpg" alt="Maude et Alex en costume d'halloween." width="33%">
-  <img src="/assets/img/maude-boris.jpg" alt="Maude avec boris sur le divan." width="67%">
+  <img src="/assets/img/maude_alex-costume.jpg" alt="Maude et Alex en costume d'halloween." width="33%" loading="lazy" decoding="async">
+  <img src="/assets/img/maude-boris.jpg" alt="Maude avec boris sur le divan." width="67%" loading="lazy" decoding="async">
 </div>
 
 ## Ma chère Maude, ma voisine de divan,
@@ -39,13 +39,13 @@ Je crois qu'il n'y a pas beaucoup d'expérience dans ma vie qui se compare à no
 Difficile de dire ce que je préfère entre nos soirées cinéma de genre pour le club, nos soirées cinéma d'horreur (qui me manque en ce moment) ou le nombre incalculable de soirées passées à écouter une télé-réalité (looking at you Love Island 👀). J'imagine que le plus marquant restera toujours l'incontournable Vampire Diaries 🧛. J'adore notre routine du moment où je m'entraîne pendant que nous commentons ce qui joue sur le projecteur.
 
 <div class="flex">
-  <img src="/assets/img/maude_alex-cuisine.jpg" alt="Maude et Alex cuisinant avec des étrangés." width="50%">
-  <img src="/assets/img/maude_alex-resto-amis.jpg" alt="Maude et Alex au resto avec des amis." width="50%">
+  <img src="/assets/img/maude_alex-cuisine.jpg" alt="Maude et Alex cuisinant avec des étrangés." width="50%" loading="lazy" decoding="async">
+  <img src="/assets/img/maude_alex-resto-amis.jpg" alt="Maude et Alex au resto avec des amis." width="50%" loading="lazy" decoding="async">
 </div>
 
 <div class="flex">
-  <img src="/assets/img/maude_alex-shabu.jpg" alt="Maude et Alex en avant d'un resto de shabu." width="50%">
-  <img src="/assets/img/maude_alex-sushi-bebe.jpg" alt="Maude et Alex avec des sushis après l'acouchement de Maude." width="50%">
+  <img src="/assets/img/maude_alex-shabu.jpg" alt="Maude et Alex en avant d'un resto de shabu." width="50%" loading="lazy" decoding="async">
+  <img src="/assets/img/maude_alex-sushi-bebe.jpg" alt="Maude et Alex avec des sushis après l'acouchement de Maude." width="50%" loading="lazy" decoding="async">
 </div>
 
 ## Ma chère Maude, ma partenaire culinaire,
@@ -55,9 +55,9 @@ Difficile de dire ce que je préfère entre nos soirées cinéma de genre pour l
 S'il y a bien un plaisir qu'on partage que je pourrais qualifier de coupable, c'est malheureusement notre gourmandise. C'est tellement bon la bonne bouffe. Ce qui est génial avec toi, c'est que peut importe que ce soit un souper gastronomique au Pégase, un hot pot louche au Cambodge ou une bonne vieille poutine du Bravo, chaque repas devient une excuse pour qu'on se transforme en critique culinaire de pacotille #ditavecamour. On peut passer des heures à décortiquer un repas, le comparer à des équivalents et commenter ce qui aurait pu rendre le plat encore meilleur.
 
 <div class="flex">
-  <img src="/assets/img/maude-asie.jpg" alt="Maude portant un costume traditionnel vietnamien." width="30%">
-  <img src="/assets/img/maude-clementine.jpg" alt="Maude avec sa fieul clémentine." width="30%">
-  <img src="/assets/img/maude-luna.jpg" alt="Maude avec luna." width="30%">
+  <img src="/assets/img/maude-asie.jpg" alt="Maude portant un costume traditionnel vietnamien." width="30%" loading="lazy" decoding="async">
+  <img src="/assets/img/maude-clementine.jpg" alt="Maude avec sa fieul clémentine." width="30%" loading="lazy" decoding="async">
+  <img src="/assets/img/maude-luna.jpg" alt="Maude avec luna." width="30%" loading="lazy" decoding="async">
 </div>
 
 
@@ -67,7 +67,7 @@ S'il y a bien un plaisir qu'on partage que je pourrais qualifier de coupable, c'
 
 Je suis rendu fier de mes accomplissements. Ce n'était pas nécessairement vrai quand on s'est rencontré. J'ai travaillé fort, mais je n'aurais jamais réussi à pousser mes ambitions aussi loin sans toi. Si je deviens ingénieur, c'est grâce à toi. Si j'ai trouvé la force de finir l'université, c'est grâce à toi. Je te dois tellement mon amour et je ne trouverai jamais les mots pour te dire à quel point je suis reconnaissant. Je vais donc utiliser ceux que j'ai qui conviennent le mieux: merci et je t'aime.
 
-![Maude, Marguerite et Alex à l'halloween](/assets/img/maude_maggie_alex.jpg)
+<img src="/assets/img/maude_maggie_alex.jpg" alt="Maude, Marguerite et Alex à l'halloween" loading="lazy" decoding="async">
 
 ## Ma chère Maude, ma chère Marguerite, ma famille,
 

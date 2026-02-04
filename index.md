@@ -13,7 +13,7 @@ description: Des lettres pour toi, mon amour.
     </div>
   </a>
 
-  <a href="/anniversaire-36" class="nav-card" style="background-image: url('/assets/img/maude_maggie_alex-sacre-coeur.jpg')">
+  <a href="/anniversaire-36" class="nav-card" style="background-image: url('/assets/img/maude_maggie_alex-bateau.jpg')">
     <div class="nav-card-body">
       <h2>Joyeux 36e anniversaire</h2>
       <p>Quelle chance de vieillir!</p>

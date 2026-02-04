@@ -4,7 +4,7 @@ title: Joyeux 36e anniversaire
 description: Vaut mieux pas trop penser au chiffre!
 date: 2026-02-05
 permalink: /anniversaire-36/
-hero_image: /assets/img/maude_maggie_alex-sacre-coeur.jpg
+hero_image: /assets/img/maude_maggie_alex-bateau.jpg
 ---
 
 ## Quel chance de vieillir!
@@ -16,9 +16,9 @@ C’est une phrase que tu dis souvent et que j’apprécie. Tu as raison que nou
 Je sais que tu vis des moments difficiles et que la peur fait partie de ton quotidien présentement. Mais je tiens à te rassurer encore une fois, c’est temporaire. Tu vas retrouver la sérénité. Pendant ce temps, ne t’inquiète pas. Malgré l’adversité tu restes une mère exemplaire, une confidente extraordinaire et une amoureuse parfaite!
 
 <div class="flex">
-  <img src="/assets/img/maggie_alex-nintendo.jpg" alt="Marguerite et Alex jouent au nintendo." width="30%">
-  <img src="/assets/img/maude_maggie_alex-farine.jpg" alt="Maude, Marguerite et Alex dans la cuisine jouant dans la farine." width="30%">
-  <img src="/assets/img/maude_maggie-bisou.jpg" alt="Maude qui donne un bisou à Marguerite." width="30%">
+  <img src="/assets/img/maggie_alex-nintendo.jpg" alt="Marguerite et Alex jouent au nintendo." width="30%" loading="lazy" decoding="async">
+  <img src="/assets/img/maude_maggie_alex-farine.jpg" alt="Maude, Marguerite et Alex dans la cuisine jouant dans la farine." width="30%" loading="lazy" decoding="async">
+  <img src="/assets/img/maude_maggie-bisou.jpg" alt="Maude qui donne un bisou à Marguerite." width="30%" loading="lazy" decoding="async">
 </div>
 
 
@@ -32,7 +32,7 @@ Comme toujours, lorsque je pense à notre avenir, je vois plein d'aventure de ri
 
 Tu seras toujours la seule qui peut comprendre pourquoi une maquilleuse au St-Hubert peut être un évènement marquant dans une vie.
 
-![Maude et Alex au St-Huber](/assets/img/maude_alex-st-hub.jpg)
+<img src="/assets/img/maude_alex-st-hub.jpg" alt="Maude et Alex au St-Huber" loading="lazy" decoding="async">
 
 <span class="signature">
 Ton amoureux, <br>
