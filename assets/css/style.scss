@@ -286,6 +286,37 @@ footer p::before {
 }
 
 /* ==========================================================================
+   Sticky Home Button — subpage navigation
+   ========================================================================== */
+
+.home-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $bg-card;
+    border: 1.5px solid $border-soft;
+    color: $text-secondary;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 2px 10px $shadow-warm;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    z-index: 100;
+
+    &:hover {
+        transform: scale(1.1);
+        border-color: $accent-rose;
+        box-shadow: 0 4px 16px $shadow-warm;
+        color: $accent-rose;
+    }
+}
+
+/* ==========================================================================
    Page Load Animation — gentle fade in
    ========================================================================== */
 
@@ -313,6 +344,15 @@ header {
    ========================================================================== */
 
 @media screen and (max-width: 600px) {
+    .home-btn {
+        top: auto;
+        bottom: 20px;
+        left: 16px;
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+
     .inner {
         padding: 12px 16px 30px;
     }

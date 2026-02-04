@@ -2,7 +2,7 @@
 layout: default
 title: 15 ans ensemble
 description: Déjà 15 ans de vie commune et ça ne fait que commencer!
-permalink: /couple-15/
+permalink: /couple-15ans/
 ---
 
 ![Maude et Alex se regardent devant un temple](/assets/img/maude_alex-intro.jpg)
