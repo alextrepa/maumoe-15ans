@@ -11,7 +11,15 @@ hero_image: /assets/img/maude_maggie_alex-bateau.jpg
 
 ---
 
-C’est une phrase que tu dis souvent et que j’apprécie. Tu as raison que nous sommes chanceux de vieillir. En réalité, nous sommes juste simplement chanceux : chanceux de nous être rencontrés, chanceux d’avoir une fille extraordinaire, chanceux d’être toujours amoureux l’un de l’autre.
+Ce bon vieil adage que tu utilises si souvent. Tu as raison que nous sommes chanceux de vieillir. En réalité, nous sommes simplement chanceux : chanceux de nous être rencontrés, chanceux d’avoir une fille extraordinaire, chanceux d’être toujours amoureux l’un de l’autre.
+
+Je ne veux pas minimiser ta peine ou ta souffrance. Je veux simplement te rappeler que moi, je me sens chanceux et que je suis heureux d’être ton amoureux. Je t'écris ces lignes, on est présentement à Chiccoutime, on vit un beau voyage, ensemble en famille. J'ai tellement de bonheur à partager tous ces moments avec toi et Marguerite.
+
+<div class="flex">
+  <img src="/assets/img/maggie_alex-bibliotheque.jpg" alt="Marguerite et Alex à la bibliotheque." width="50%" loading="lazy" decoding="async">
+  <img src="/assets/img/maggie-cafe.jpg" alt="Marguerite dans un café." width="50%" loading="lazy" decoding="async">
+</div>
+
 
 Je sais que tu vis des moments difficiles et que la peur fait partie de ton quotidien présentement. Mais je tiens à te rassurer encore une fois, c’est temporaire. Tu vas retrouver la sérénité. Pendant ce temps, ne t’inquiète pas. Malgré l’adversité tu restes une mère exemplaire, une confidente extraordinaire et une amoureuse parfaite!
 
